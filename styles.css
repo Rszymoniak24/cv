@@ -475,12 +475,6 @@ a {
     color: #9099a0;
 }
 
-@media (max-width: 850px) {
-    .profile {
-        width: 100%;
-    }
-}
-
 .profile .name-wrapper {
     float: left;
     width: 60%;
@@ -496,19 +490,6 @@ a {
     padding-top: 40px;
 }
 
-@media (max-width: 1200px) {
-    .profile h1 {
-        padding-top: 20px;
-    }
-}
-
-@media (max-width: 450px) {
-    .profile h1 {
-        font-size: 1.8em;
-        padding-top: 20px;
-    }
-}
-
 .profile li {
     margin-bottom: 10px;
 }
@@ -519,12 +500,6 @@ a {
     float: left;
 }
 
-@media (max-width: 1200px) {
-    .profile .picture-resume-wrapper {
-        width: 100%;
-    }
-}
-
 .profile .picture-resume {
     width: 220px;
     height: 220px;
@@ -533,6 +508,7 @@ a {
     margin-right: 0px;
     position: relative;
     vertical-align: middle;
+    margin: 0 auto;
 }
 
 .profile .picture-resume span {
@@ -549,55 +525,9 @@ a {
     width: 150px;
 }
 
-@media (max-width: 1500px) {
-    .profile .picture-resume img {
-        width: 80px;
-    }
-}
-
-@media (max-width: 1200px) {
-    .profile .picture-resume img {
-        width: 120px;
-        height: 120px;
-    }
-}
-
-@media (max-width: 1500px) {
-    .profile .picture-resume {
-        width: 150px;
-        height: 150px;
-    }
-}
-
-@media (max-width: 1200px) {
-    .profile .picture-resume {
-        width: 200px;
-        height: 200px;
-    }
-}
-
-@media (max-width: 450px) {
-    .profile .picture-resume {
-        width: 180px;
-        height: 180px;
-    }
-}
-
 .profile .contact-info {
     margin-top: 50px;
     font-weight: 300;
-}
-
-@media (max-width: 1200px) {
-    .profile .contact-info {
-        margin-top: 70px;
-    }
-}
-
-@media (max-width: 450px) {
-    .profile .contact-info {
-        margin-top: 50px;
-    }
 }
 
 .profile .list-titles {
@@ -619,20 +549,6 @@ a {
     text-align: left;
     font-weight: 300;
     margin-top: 50px;
-}
-
-@media (max-width: 1200px) {
-    .profile .contact-presentation {
-        margin-top: 70px;
-        margin-bottom: 70px;
-    }
-}
-
-@media (max-width: 850px) {
-    .profile .contact-presentation {
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
 }
 
 .profile svg {
@@ -658,12 +574,6 @@ a {
     min-height: 100vh;
 }
 
-@media (max-width: 850px) {
-    .experience {
-        width: 100%;
-    }
-}
-
 .experience h3.experience-title {
     color: #66cc99;
     text-align: left;
@@ -681,26 +591,12 @@ a {
     margin-bottom: 60px;
 }
 
-@media (max-width: 450px) {
-    .experience .company-wrapper {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-}
-
 .experience .job-wrapper {
     width: 70%;
     float: left;
     text-align: left;
     padding-right: 5%;
     margin-bottom: 60px;
-}
-
-@media (max-width: 450px) {
-    .experience .job-wrapper {
-        width: 100%;
-        margin-bottom: 40px;
-    }
 }
 
 .experience .experience-title {
@@ -710,18 +606,6 @@ a {
 
 .section-padding {
     padding: 60px 60px 40px 40px;
-}
-
-@media (max-width: 850px) {
-    .section-padding {
-        padding: 80px 15% 40px 10%;
-    }
-}
-
-@media (max-width: 450px) {
-    .section-padding {
-        padding: 40px 10% 20px 5%;
-    }
 }
 
 .section-wrapper {
@@ -735,12 +619,6 @@ a {
 
 .section-wrapper-full {
     width: 100%;
-}
-
-@media (max-width: 450px) {
-    .section-wrapper {
-        width: 100%;
-    }
 }
 
 .section-wrapper:nth-child(3) {
@@ -948,3 +826,73 @@ a {
         width: 70%;
     }
 } */
+
+
+/*RWD*/
+
+@media (max-width: 767px) {
+    .profile .picture-resume-wrapper {
+        width: 100%;
+    }
+    .experience {
+        width: 100%;
+    }
+    .profile .list-titles {
+        display: none;
+    }
+    .profile .picture-resume span {
+        display: block;
+    }
+    .profile h1 {
+        text-align: center;
+    }
+    .profile .name-wrapper {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .profile .list-content {
+        width: 100%;
+        padding-left: 15px;
+    }
+    .profile .picture-resume {
+        width: 180px;
+        height: 180px;
+    }
+    .profile .contact-info {
+        margin-top: 50px;
+    }
+    .profile h1 {
+        font-size: 1.8em;
+        padding-top: 20px;
+    }
+    .section-padding {
+        padding: 40px 10% 20px 5%;
+    }
+    .section-wrapper {
+        width: 100%;
+    }
+    .experience .company-wrapper {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .experience .job-wrapper {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 1191px) {
+    .profile .contact-presentation {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .experience {
+        width: 100%;
+    }
+    .section-padding {
+        padding: 80px 15% 40px 10%;
+    }
+    .profile {
+        width: 100%;
+    }
+}
