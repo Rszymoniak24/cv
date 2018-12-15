@@ -621,6 +621,10 @@ a {
     width: 100%;
 }
 
+.profile .list-content-full {
+    width: 100%;
+}
+
 .section-wrapper:nth-child(3) {
     padding-right: 8%;
 }
