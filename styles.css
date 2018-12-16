@@ -77,7 +77,7 @@ a:hover::after {
     width: 60%;
 }
 
-.profile h1 {
+.name-wrapper__title {
     font-size: 2.5em;
     text-align: left;
     font-family: 'Varela Round', sans-serif;
@@ -87,7 +87,7 @@ a:hover::after {
     padding-top: 40px;
 }
 
-.profile li {
+.list-element {
     margin-bottom: 10px;
 }
 
@@ -108,7 +108,7 @@ a:hover::after {
     text-align: left;
 }
 
-.profile .picture-resume img {
+.picture-resume__image {
     border-radius: 20%;
     width: 150px;
 }
@@ -139,7 +139,7 @@ a:hover::after {
     margin-top: 50px;
 }
 
-h3.experience-title {
+.experience-title {
     text-align: left;
     text-transform: uppercase;
     font-size: 1.2em;
@@ -148,7 +148,7 @@ h3.experience-title {
     border-bottom: 1px solid;
 }
 
-.profile .list-content-full {
+.list-content-full {
     width: 100%;
 }
 
@@ -179,7 +179,7 @@ h3.experience-title {
     min-height: 100vh;
 }
 
-.experience h3.experience-title {
+.experience-title--white {
     color: #fff;
 }
 
@@ -199,11 +199,6 @@ h3.experience-title {
     margin-bottom: 60px;
 }
 
-.experience .experience-title {
-    color: white;
-    margin-bottom: 15px;
-}
-
 
 /* global */
 
@@ -218,9 +213,14 @@ h3.experience-title {
 
 /* Font awesome visibility */
 
-.fas,
-.fab {
+.fa-hide {
     display: none;
+}
+
+.fa-big {
+    font-size: 2em;
+    padding-right: 10px;
+    padding-bottom: 5px;
 }
 
 
@@ -236,7 +236,7 @@ h3.experience-title {
     .profile .list-titles {
         display: none;
     }
-    .profile h1 {
+    .name-wrapper__title {
         text-align: center;
         font-size: 1.8em;
         padding-top: 20px;
@@ -274,8 +274,7 @@ h3.experience-title {
     .section-padding {
         padding: 40px 10% 20px 5%;
     }
-    .fas,
-    .fab {
+    .fa-hide {
         display: inline-block;
         padding-right: 10px;
     }
@@ -315,8 +314,7 @@ h3.experience-title {
         margin-top: 20px;
     }
     .experience,
-    .experience h3.experience-title,
-    .experience .experience-title {
+    .experience-title--white {
         color: #000;
     }
     .section-padding {
