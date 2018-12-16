@@ -126,7 +126,7 @@ a:hover::after {
     color: #4a4e51;
 }
 
-.profile .list-content {
+.list-content {
     float: left;
     width: 60%;
     text-align: left;
@@ -221,6 +221,121 @@ a:hover::after {
     font-size: 2em;
     padding-right: 10px;
     padding-bottom: 5px;
+}
+
+
+/* fixed panel */
+
+.fixed-panel {
+    position: fixed;
+    bottom: -4px;
+    right: 40px;
+}
+
+.fixed-panel__button {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2), 0px 0px 5px 0 rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+    display: block;
+}
+
+
+/* Tooltip */
+
+.tooltip {
+    margin-left: 20px;
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    /* If you want dots under the hoverable text */
+}
+
+
+/* Tooltip text */
+
+.tooltip .tooltiptext {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    width: 120px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+
+/* Show the tooltip text when you mouse over the tooltip container */
+
+.tooltip:hover .tooltiptext {
+    opacity: 1;
+    transition: opacity .5s;
+}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+
+/* popup form */
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.popup-overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 300px;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup-close {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup-close:after {
+    display: none;
 }
 
 
@@ -320,5 +435,8 @@ a:hover::after {
     .section-padding {
         padding-top: 0;
         padding-bottom: 0;
+    }
+    .fixed-panel {
+        display: none;
     }
 }
