@@ -5,8 +5,10 @@
 }
 
 * {
-    -webkit-print-color-adjust: exact !important;   /* Chrome, Safari */
-    color-adjust: exact !important;                 /*Firefox*/
+    -webkit-print-color-adjust: exact !important;
+    /* Chrome, Safari */
+    color-adjust: exact !important;
+    /*Firefox*/
 }
 
 html, body {
@@ -306,10 +308,12 @@ a:hover::after {
 
 .popup {
     margin: 70px auto;
-    padding: 20px;
+    padding: 10px;
+    padding-top: 20px;
     background: #fff;
     border-radius: 5px;
     width: 300px;
+    text-align: center;
     position: relative;
     transition: all 5s ease-in-out;
 }
@@ -328,6 +332,13 @@ a:hover::after {
 .popup-close:after {
     display: none;
 }
+
+.popup-title {
+    border: 0;
+    text-align: center;
+}
+
+/* recommendations section */
 
 .comment-wrap {
     margin-bottom: 1.25rem;
@@ -372,6 +383,116 @@ a:hover::after {
 .comment-date {
     float: left;
 }
+
+/* form */
+
+.input-box {
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-box .form__container-input {
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: solid 2px #c9c9c9;
+    color: #000;
+    -webkit-transition: all 0.6s ease-out 0s;
+    transition: all 0.6s ease-out 0s;
+}
+
+.input-box .form__container-input:focus, .input-box .form__container-input:active {
+    outline: none;
+}
+
+.input-box label {
+    position: absolute;
+    top: 16%;
+    left: 0;
+    color: #999;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    pointer-events: none;
+    -webkit-transition: all 0.15s ease-out 0s;
+    transition: all 0.15s ease-out 0s;
+}
+
+.input-box .form__container-input:focus+label, .input-box .form__container-input:valid+label, .input-box .form__container-input:not(:empty)+label, .input-box .form__container-input:not([value=""]):not(:focus):invalid + label {
+    top: -12px;
+    font-size: 14px;
+    color: #c9c9c9;
+}
+
+.input-box .form__container-input:not([value=""]):not(:focus):invalid {
+    border-bottom: solid 2px tomato;
+}
+
+.input-box .form__container-input:focus {
+    border-bottom: solid 2px #5da4d9;
+}
+
+.form__container-messsage{
+    resize:none;
+}
+
+.btn {
+    display: inline-block;
+    line-height: 35px;
+    margin: 8px;
+    padding: 0 15px;
+    font-size: 15px;
+    position: relative;
+    opacity: .999;
+    border-radius: 3px;
+  }
+
+  .btn, .btn-border-o:before, .btn-border-o:after, .btn-border:before, .btn-border:after{
+    transition: all .3s;
+  }
+  
+  .btn-border-o {
+    background-color: transparent;
+    border: 1px solid #d0d0d0;
+    color: #B8B8B8;
+  }
+  .btn-border-o:before, .btn-border-o:after {
+    content: '';
+    border-style: solid;
+    position: absolute;
+    z-index: 5;
+    border-radius: 3px;
+    box-sizing: content-box;
+  }
+  .btn-border-o:before {
+    width: 0;
+    height: 100%;
+    border-width: 1px 0 1px 0;
+    top: -1px;
+    left: 0;
+    transition-delay: 0.05s;
+  }
+  .btn-border-o:after {
+    width: 100%;
+    height: 0;
+    border-width: 0 1px 0 1px;
+    top: 0;
+    left: -1px;
+  }
+  .btn-border-o:hover:before {
+    width: 100%;
+  }
+  .btn-border-o:hover:after {
+    height: 100%;
+  }
+  .btn-border-o.btn-blue:before, .btn-border-o.btn-blue:after {
+    border-color: #3498db;
+  }
+  .btn-border-o.btn-blue:hover {
+    color: #3498db;
+  }
 
 /*RWD*/
 
@@ -467,12 +588,12 @@ a:hover::after {
         display: block;
     }
     .profile .list-content {
-        width:60%;
+        width: 60%;
     }
     .profile .name-wrapper {
-        width:60%;
+        width: 60%;
     }
-    .name-wrapper__title{
+    .name-wrapper__title {
         text-align: left;
         padding-top: 40px;
     }
