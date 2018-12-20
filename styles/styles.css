@@ -308,14 +308,15 @@ a:hover::after {
     left: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.7);
-    transition: opacity 500ms;
+    transition: all 0s;
     visibility: hidden;
     opacity: 0;
 }
 
 .popup-overlay:target {
-    visibility: visible;
     opacity: 1;
+    visibility: visible;
+    transition: all 0.5s;
 }
 
 .popup {
@@ -452,9 +453,20 @@ a:hover::after {
     color: #c9c9c9;
 }
 
-.input-box .form__container-input:not([value=""]):not(:focus):invalid {
+/* .input-box .form__container-input:not([value=""]):not(:focus):invalid {
     border-bottom: solid 2px tomato;
-}
+} */
+
+
+/* Show red borders when filled, but invalid */
+.input-box .form__container-input:not(:placeholder-shown):not(:focus) {
+    border-color: hsl(0, 76%, 50%);;
+  }
+  
+  /* Show green borders when valid */
+  .input-box .form__container-input:valid:not(:focus) {
+    border-color: hsl(120, 76%, 50%);
+  }
 
 .input-box .form__container-input:focus {
     border-bottom: solid 2px #5da4d9;
