@@ -375,6 +375,14 @@ a:hover::after {
     background-size: contain;
 }
 
+.av1{
+    background-image: url('https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg');
+}
+
+.av2{
+    background-image: url('https://s3.amazonaws.com/uifaces/faces/twitter/felipenogs/128.jpg');
+}
+
 .comment-block {
     padding: 1rem;
     background-color: #fff;
