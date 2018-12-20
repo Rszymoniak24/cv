@@ -447,7 +447,7 @@ a:hover::after {
 .input-box .form__container-input:focus+label,
 .input-box .form__container-input:valid+label,
 .input-box .form__container-input:not(:empty)+label,
-.input-box .form__container-input:not([value=""]):not(:focus):invalid+label {
+.input-box .form__container-input:not(:placeholder-shown):not(:focus)+label {
     top: -12px;
     font-size: 14px;
     color: #c9c9c9;
