@@ -325,7 +325,7 @@ a:hover::after {
     padding-top: 20px;
     background: #fff;
     border-radius: 5px;
-    width: 300px;
+    width: 500px;
     text-align: center;
     position: relative;
     /* transition: all 5s ease-in-out; */
@@ -424,6 +424,7 @@ a:hover::after {
     color: #000;
     -webkit-transition: all 0.6s ease-out 0s;
     transition: all 0.6s ease-out 0s;
+    width:350px;
 }
 
 .input-box .form__container-input:focus,
@@ -479,6 +480,7 @@ a:hover::after {
 
 .form__container-messsage {
     resize: none;
+    height: 100px;
 }
 
 .btn {
@@ -605,6 +607,15 @@ a:hover::after {
         display: inline-block;
         padding-right: 10px;
     }
+    .popup{
+        width: 300px;
+    }
+    .form__container-messsage{
+        height: auto;
+    }
+    .input-box .form__container-input {
+        width:auto;
+    }
 }
 
 
@@ -627,6 +638,8 @@ a:hover::after {
     .profile .picture-resume {
         text-align: center;
     }
+    
+
 }
 
 
