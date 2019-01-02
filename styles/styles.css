@@ -373,11 +373,13 @@ a:hover::after {
     height: 2.25rem;
     width: 2.25rem;
     border-radius: 50%;
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .av1 {
-    background-image: url('https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg');
+    background-image: url('../images/mt.jpg');
 }
 
 .av2 {
