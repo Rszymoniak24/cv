@@ -223,7 +223,7 @@ a:hover::after {
 }
 
 .fa-big {
-    font-size: 2em;
+    font-size: 1em;
     padding-right: 10px;
     padding-bottom: 5px;
 }
@@ -364,14 +364,13 @@ a:hover::after {
 .photo {
     padding-top: 0.625rem;
     padding-left: 20px;
-    padding-right: 20px;
     display: table-cell;
-    width: 3.5rem;
+    width: 6.5rem;
 }
 
 .photo .avatar {
-    height: 2.25rem;
-    width: 2.25rem;
+    height: 4.25rem;
+    width: 4.25rem;
     border-radius: 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -383,7 +382,7 @@ a:hover::after {
 }
 
 .av2 {
-    background-image: url('https://s3.amazonaws.com/uifaces/faces/twitter/felipenogs/128.jpg');
+    background-image: url('../images/ed.jpg');
 }
 
 .comment-block {
@@ -426,7 +425,7 @@ a:hover::after {
     color: #000;
     -webkit-transition: all 0.6s ease-out 0s;
     transition: all 0.6s ease-out 0s;
-    width:350px;
+    width: 350px;
 }
 
 .input-box .form__container-input:focus,
@@ -609,14 +608,14 @@ a:hover::after {
         display: inline-block;
         padding-right: 10px;
     }
-    .popup{
+    .popup {
         width: 300px;
     }
-    .form__container-messsage{
+    .form__container-messsage {
         height: auto;
     }
     .input-box .form__container-input {
-        width:auto;
+        width: auto;
     }
 }
 
@@ -640,8 +639,6 @@ a:hover::after {
     .profile .picture-resume {
         text-align: center;
     }
-    
-
 }
 
 
@@ -659,8 +656,10 @@ a:hover::after {
         width: 40%;
         padding-bottom: 30px;
     }
-    .profile .contact-info {
-        margin-top: 20px;
+    .profile .contact-info,
+    .profile .contact-presentation {
+        margin-top: 0;
+        margin-bottom: 0;
     }
     .profile .list-titles {
         display: block;
@@ -686,5 +685,8 @@ a:hover::after {
     }
     .fixed-panel {
         display: none;
+    }
+    .experience .job-wrapper {
+        margin-bottom: 0;
     }
 }
