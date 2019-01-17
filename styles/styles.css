@@ -62,9 +62,14 @@ a:hover::after {
     font-weight: 400;
 }
 
+.js-hide {
+    display: none;
+}
+
 .resume-wrapper {
     position: relative;
     text-align: center;
+    display: flex;
 }
 
 
@@ -360,14 +365,14 @@ a:hover::after {
 
 .comment-wrap {
     margin-bottom: 1.25rem;
-    display: table;
+    display: flex;
     width: 100%;
     min-height: 5.3125rem;
 }
 
 .photo {
     padding-top: 0.625rem;
-    padding-left: 20px;
+    padding: 0 20px;
     display: table-cell;
     width: 6.5rem;
 }
@@ -392,7 +397,6 @@ a:hover::after {
 .comment-block {
     padding: 1rem;
     background-color: #fff;
-    display: table-cell;
     vertical-align: top;
     border-radius: 0.1875rem;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.28);
@@ -621,6 +625,16 @@ a:hover::after {
     .input-box .form__container-input {
         width: auto;
     }
+    .comment-wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+    .photo {
+        padding: 0.625rem 20px;
+    }
+    .comment-wrap:nth-child(even) {
+        flex-direction: column-reverse;
+    }
 }
 
 
@@ -642,6 +656,9 @@ a:hover::after {
     }
     .profile .picture-resume {
         text-align: center;
+    }
+    .resume-wrapper {
+        flex-direction: column;
     }
 }
 
@@ -692,5 +709,8 @@ a:hover::after {
     }
     .experience .job-wrapper {
         margin-bottom: 0;
+    }
+    a {
+        color: #000;
     }
 }
