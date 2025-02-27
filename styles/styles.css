@@ -62,10 +62,6 @@ a:hover::after {
     font-weight: 400;
 }
 
-.js-hide {
-    display: none;
-}
-
 .resume-wrapper {
     position: relative;
     text-align: center;
@@ -717,4 +713,8 @@ a:hover::after {
     a {
         color: #000;
     }
+}
+
+.js-hide {
+    display: none;
 }
