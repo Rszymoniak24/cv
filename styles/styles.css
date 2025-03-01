@@ -561,6 +561,10 @@ a:hover::after {
     color: #3498db;
 }
 
+.only-print {
+    display: none;
+}
+
 
 /*RWD*/
 
@@ -669,13 +673,13 @@ a:hover::after {
     * {
         font-size: 12px;
     }
+
     .print-show {
         display: inline-block;
         padding-right: 10px;
     }
     .profile .picture-resume-wrapper {
         width: 40%;
-        padding-bottom: 30px;
     }
     .profile .contact-info,
     .profile .contact-presentation {
@@ -683,13 +687,13 @@ a:hover::after {
         margin-bottom: 0;
     }
     .profile .list-titles {
-        display: block;
+        display: none;
     }
     .profile .list-content {
-        width: 60%;
+        width: 40%;
     }
     .profile .name-wrapper {
-        width: 60%;
+        display:none;
     }
     .name-wrapper__title {
         text-align: left;
@@ -712,6 +716,15 @@ a:hover::after {
     }
     a {
         color: #000;
+    }
+    .picture-resume-wrapper {
+        margin-top:10px;
+    }
+    .photo, .company-wrapper {
+        display: none;
+    }
+    .only-print {
+        display: inline-block;
     }
 }
 
