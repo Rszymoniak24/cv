@@ -394,6 +394,10 @@ a:hover::after {
     background-image: url('../images/ed.jpg');
 }
 
+.av4 {
+    background-image: url('../images/jf.jpg');
+}
+
 .comment-block {
     padding: 1rem;
     background-color: #fff;
@@ -725,6 +729,9 @@ a:hover::after {
     }
     .only-print {
         display: inline-block;
+    }
+    .no-print {
+        display: none;
     }
 }
 
