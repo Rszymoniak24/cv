@@ -639,10 +639,10 @@ a:hover::after {
     }
     .photo {
         padding: 0.625rem 20px;
+        display: flex;
+        order: -1;
     }
-    .comment-wrap:nth-child(even) {
-        flex-direction: column-reverse;
-    }
+
 }
 
 
