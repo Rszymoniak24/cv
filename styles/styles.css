@@ -582,6 +582,7 @@ a:hover::after {
     .profile .list-titles {
         display: none;
     }
+
     .name-wrapper__title {
         text-align: center;
         font-size: 1.8em;
@@ -649,6 +650,12 @@ a:hover::after {
 /* tablet */
 
 @media (max-width: 1191px) {
+    .no-mobile {
+        display:none;
+    }
+    .only-mobile {
+        display:block;
+    }
     .profile .contact-presentation {
         margin-top: 50px;
         margin-bottom: 50px;
