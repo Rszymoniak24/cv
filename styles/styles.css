@@ -147,6 +147,7 @@ a:hover::after {
     text-align: left;
     font-weight: 300;
     margin-top: 50px;
+
 }
 
 .experience-title {
@@ -156,6 +157,10 @@ a:hover::after {
     margin-bottom: 20px;
     font-weight: 400;
     border-bottom: 1px solid;
+}
+
+.no-underline {
+    border-bottom: none;
 }
 
 .list-content-full {
@@ -650,6 +655,7 @@ a:hover::after {
 /* tablet */
 
 @media (max-width: 1191px) {
+
     .no-mobile {
         display:none;
     }
@@ -736,6 +742,9 @@ a:hover::after {
     }
     .only-print {
         display: inline-block;
+    }
+    .only-print-padding {
+        padding-top: 85px;
     }
     .no-print {
         display: none;
