@@ -757,7 +757,7 @@ a:hover::after {
 
 .absolute-bottom {
     position: absolute;
-    bottom: -200px;
+    bottom: -150px;
     left:0;
     text-align: left;
     font-size: 8px;
